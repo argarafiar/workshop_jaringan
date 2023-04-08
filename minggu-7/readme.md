@@ -1,7 +1,6 @@
 ﻿
 3121600010 – Arga Rafi I.M
 3121600025 – Ahmad Shonhaji
-
 3121600023 – Arianto Zaki Hamdalah
 
 
