@@ -5,31 +5,31 @@
 
 LAPORAN MINGGU-7 Instalasi DNS
 
-##1. **Update dan upgrade paket**
+## 1. **Update dan upgrade paket**
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.001.png)
 
 Dengan menggunakan perintah apt update dan apt upgrade akan mengupdate dan memperbarui daftar paket pada system
 
-##2. **Ubah Hostname**
+## 2. **Ubah Hostname**
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.002.png)
 
 Ubah nama hostname sesuai topologi, karena kami kelompok 2 maka nama hostnamenya yaitu : kampus-02.takehome.com
 
-##3. **Install Bind9**
+## 3. **Install Bind9**
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.003.png)
 
 Kita menginstal bind9 yang digunakan pada sistem Debian untuk mengelola dan menyediakan layanan DNS pada jaringan lokal atau internet.
 
-##4. **Install bind9utils**
+## 4. **Install bind9utils**
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.004.png)
 
 Kita menginstal bind9utils untuk bisa menggunakan utilitas yang terkait dengan server DNS BIND9 seperti : dig, nslookup, rndc, dnssec-keygen dll.
 
-##5. **Konvigurasi DNS Server**
+## 5. **Konvigurasi DNS Server**
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.005.png)
 
@@ -41,7 +41,7 @@ Zone editor adalah fitur yang memungkinkan untuk membuat, edit, dan hapus DNS, d
 
 Zone sendiri adalah suatu wilayah atau domain yang dikelola oleh sebuah server DNS tertentu. Setiap zona DNS dapat berisi informasi mengenai nama domain, alamat IP, atau informasi lainnya yang terkait dengan domain tersebut.
 
-##6. **Setting file forward**
+## 6. **Setting file forward**
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.008.png)
 
@@ -67,7 +67,7 @@ Ubah localhost menjadi nama hostname yang sudah di setting sebelumnya
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.010.png)
 
-##7. **Buat file Reserve**
+## 7. **Buat file Reserve**
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.011.png)
 
@@ -77,7 +77,7 @@ Buat file reserve dengan mengcopy file db.127 pada direktori yang sama dengan fo
 
 Sama seperti sebelumnya ubah localhost menjadi hostname yang telah di setting dan juga ganti ip menjadi 249 sesuai dengan ip sebelumnya
 
-##8. **Tambahkan name server**
+## 8. **Tambahkan name server**
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.013.png)
 
@@ -85,19 +85,19 @@ Sama seperti sebelumnya ubah localhost menjadi hostname yang telah di setting da
 
 Daftarkan IP dari Debian kedalam file resolv.conf
 
-##9. **Restart layanan DNS**
+## 9. **Restart layanan DNS**
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.015.png)
 
 Setelah setting selesai lakukan restart untuk mengupdate setting yang telah di ubah
 
-##10. **Pindahkan file**
+## 10. **Pindahkan file**
 
 Sebelumnya kita menaruh file bind di etc, pindahkan kedalam folder chace yang berlokasi di computer/var/cache/bind, file yang dipindah yairu forward dan reverse
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.016.png)
 
-##11. **Pengecekan nslookup dan service**
+## 11. **Pengecekan nslookup dan service**
 
 ![](Aspose.Words.959c2954-c2de-4028-9abb-dca56bf5285c.017.png)
 
