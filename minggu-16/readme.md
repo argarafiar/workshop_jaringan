@@ -12,13 +12,18 @@ Ini merupakan lanjutan dari percobaan sebelumnya, jadi kami skip bagian awal sep
 
 ### 1. **Membuat User**
 Tuliskan command seperti di bawah ini:
+
 -- maildirmake /etc/skel/Maildir
+
 -- adduser soni
+
 Lalu enter saja sampai proses selesai. Setelah itu buat akun lagi untuk user 2.
 
 ### 2. **Instalasi Squirrelmail**
 Install Squireel dengan command dibawah ini
+
 -- apt-get install squirrelmail
+
 Setelah selesai edit file di folder /etc/apache2/apache2.conf.
 Pada bagian bawah tambahkan configurasi sebagai berikut:
 
